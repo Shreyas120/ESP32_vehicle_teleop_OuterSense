@@ -4,23 +4,24 @@
 char ssid[] = "Enter SSID";
 char pass[] = "Enter password";
 
-#include <ESP32Servo.h>
 /* Fill-in information from Blynk Device Info here */
 #define BLYNK_TEMPLATE_ID           "TMPLFNHId3V6"
 #define BLYNK_TEMPLATE_NAME         "Quickstart Device"
 #define BLYNK_AUTH_TOKEN            "qivhMtvejmj7nPfGsgxVjg3J3o4Pc061"
-/* Comment this out to disable prints and save space */
-#define BLYNK_PRINT Serial
-#define MIN_PULSE_LENGTH 1000 // Minimum pulse length in µs
-#define MAX_PULSE_LENGTH 2000 // Maximum pulse length in µs
+
+
+
+#include <ESP32Servo.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
+#define BLYNK_PRINT Serial
+#define MIN_PULSE_LENGTH 1000 // Minimum pulse length in µs
+#define MAX_PULSE_LENGTH 2000 // Maximum pulse length in µs
+
 
 int steer = 90; 
 int speed = 1000;
-
-
 Servo bldc,steering; 
 
 // This function will be called every time Slider Widget in Blynk app writes values to the Virtual Pin 1
