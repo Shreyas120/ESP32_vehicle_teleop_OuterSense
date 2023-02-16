@@ -9,8 +9,6 @@ char pass[] = "Enter password";
 #define BLYNK_TEMPLATE_NAME         "Quickstart Device"
 #define BLYNK_AUTH_TOKEN            "qivhMtvejmj7nPfGsgxVjg3J3o4Pc061"
 
-
-
 #include <ESP32Servo.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -18,7 +16,6 @@ char pass[] = "Enter password";
 #define BLYNK_PRINT Serial
 #define MIN_PULSE_LENGTH 1000 // Minimum pulse length in µs
 #define MAX_PULSE_LENGTH 2000 // Maximum pulse length in µs
-
 
 int steer = 90; 
 int speed = 1000;
